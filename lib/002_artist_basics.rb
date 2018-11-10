@@ -23,7 +23,9 @@ class Artist
   end
 
   def add_song(song)
+    if song.artist == false
       song.artist = self
+    end
       @songs << song
   end
 
