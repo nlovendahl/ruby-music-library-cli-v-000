@@ -16,7 +16,6 @@ class Song
 
   def artist_name=(artist)
     artist = Artist.find_or_create_by_name(artist)
-    self.artist = artist
     artist.add_song(self)
   end
 
